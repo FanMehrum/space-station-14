@@ -119,7 +119,7 @@ public static class ServerPackaging
                     "/v:m",
                     $"/p:TargetOs={platform.TargetOs}",
                     "/t:Rebuild",
-                    //"/p:FullRelease=true",
+                    "/p:FullRelease=true",
                     "/m"
                 }
             });
@@ -155,7 +155,7 @@ public static class ServerPackaging
                 "--no-self-contained",
                 "-c", configuration,
                 $"/p:TargetOs={targetOs}",
-                //"/p:FullRelease=True",
+                "/p:FullRelease=True",
                 "/m",
                 "RobustToolbox/Robust.Server/Robust.Server.csproj"
             }
